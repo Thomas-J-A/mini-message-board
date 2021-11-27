@@ -1,5 +1,14 @@
 extends ./layout
 
 block content
-  h1 index page
-  p= message
+  include header.pug
+  div.posts-wrapper
+    div.add-post
+      a(href="/new")
+        button(type="button") Say something profound...
+    each val in messages
+      div.message
+        p.message-text= val.text
+        div.message-meta
+          p.message-username= val.username
+          p.message-added= val.added.toDateString()

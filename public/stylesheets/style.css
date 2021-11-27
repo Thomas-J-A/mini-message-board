@@ -1,0 +1,136 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin-bottom: 2rem;
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+.header-title {
+  margin-bottom: 1rem;
+  text-shadow: 3px 3px 5px rgba(0,0,0,.4);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4rem;
+}
+
+.header-tagline {
+  font-size: 1.5rem;
+}
+
+.posts-wrapper {
+  max-width: 600px;
+  margin: 1.5rem auto 0;
+}
+
+.add-post {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+}
+
+.add-post button {
+  padding: .6rem 1.5rem;
+  border: 2px solid #000;
+  border-radius: .3rem;
+  box-shadow: 2px 2px 5px 2px rgba(0,0,0,.4);
+  font-size: 1.2rem;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 200ms, color 200ms;
+}
+
+.add-post button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.message {
+  margin-top: 1rem;
+  padding: 1.2rem;
+  border: 2px solid #000;
+  border-radius: .3rem;
+  box-shadow: 2px 2px 5px 2px rgba(0,0,0,.4);
+}
+
+.message-text {
+  margin-bottom: .7rem;
+  font-size: 1.2rem;
+}
+
+.message-meta {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 2px solid rgba(0,0,0,.6);
+  opacity: .6;
+}
+
+
+/*
+=========================
+        form
+=========================
+*/
+
+form {
+  max-width: 600px;
+  margin: 6rem auto;
+  padding: 1.2rem;
+  border: 2px solid #000;
+  border-radius: .3rem;
+  box-shadow: 2px 2px 5px 2px rgba(0,0,0,.4);
+  font-size: 1.2rem;
+}
+
+form h1 {
+  margin: .5rem 0 1.5rem;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 1.4rem;
+  padding: .3rem;
+  font-size: 1.1rem;
+}
+
+.form-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.form-bottom a {
+  margin-right: .6rem;
+}
+
+.form-bottom button {
+  padding: .1rem 1.5rem;
+  border: 2px solid #000;
+  border-radius: .3rem;
+  background-color: #000;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 200ms, color 200ms;
+}
+
+.form-bottom button:hover {
+  background-color: #fff;
+  color: #000;
+}

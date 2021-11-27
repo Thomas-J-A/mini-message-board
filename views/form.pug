@@ -1,0 +1,14 @@
+extends ./layout
+
+block content
+  include header.pug
+  form(method="POST", action="/new")
+    h1 Post a message
+    label(for="text") Message
+    textarea(id="text", name="text", type="text", placeholder="I love/hate Donald Trump", required)
+    label(for="username") Username
+    input(id="username", name="username", type="text", placeholder="Demonslayer22", required)
+    .form-bottom
+      a(href="/")
+        button(type="button") Back
+      button(type="submit") Post

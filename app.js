@@ -1,9 +1,10 @@
 const express = require('express');
 const path = require('path');
 
+const port = process.env.PORT || '3000';
+
 // Import routes
 const indexRouter = require('./routes/index.js');
-const newRouter = require('./routes/new.js');
 
 const app = express();
 
@@ -13,12 +14,12 @@ app.set('view engine', 'pug');
 
 // Setup middleware
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({ extended: false }));
 
 // Initialize routes
 app.use('/', indexRouter);
-app.use('/new', newRouter);
 
 // Start up server
-app.listen(3000, () => {
-  console.log('Server listening for requests on port 3000');
+app.listen(port, () => {
+  console.log(`Server listening for requests on port ${ port }`);
 });
